@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var city=["서울","부산","대전"];
+var joindata1=city.join();
+var joindata2=city.join('-');
+var joindata3=city.join(' 그리고');
+document.write("조인결과 1 : "+joindata1+"<p/>");
+document.write("조인결과 2 : "+joindata2+"<p/>");
+document.write("조인결과 3 : "+joindata3+"<p/>");
+
+
+var city01=["서울","부산","대전"];
+var city02=["대구","파주","일산"];
+var city03=["전주","광주","세종"];
+
+var data1=city01.concat("수원","오산");
+var data2=city01.concat(city02);
+var data3=city01.concat(city03,city02);
+
+document.write("결과 1 : "+data1+"<p/>");
+document.write("결과 2 : "+data2+"<p/>");
+document.write("결과 3 : "+data3+"<p/>");
+
+var data=[9,8,7,6,5,4,3,2,1];
+document.write("배열 : "+data.join()+"<p/>");
+var rdata=data.reverse();
+document.write("배열 : "+rdata+"<p/>");
+
+
+</script>
+</body>
+</html>

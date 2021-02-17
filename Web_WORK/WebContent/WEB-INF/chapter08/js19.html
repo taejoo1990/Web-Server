@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+        var ndata1=[19, 38, 67, 26, 55, 24, 53, 12, 31]; 
+        var ndata2=[132, 2, 41, 123, 45, 1234, 6, 29, 4567]; 
+        var edata=['Apple', 'Html', 'Game', 'Computer', 'Java']; 
+        var kdata=['서울', '부산', '구포', '대구', '인천']; 
+        
+        document.write("수치 정렬1 : "+ndata1.sort()+"<p/>");
+        document.write("수치 정렬2 : "+ndata2.sort()+"<p/>");
+        document.write("수치 정렬3 : "+ndata2.sort(function(a,b){return a-b})+"<p/>");
+        document.write("수치 정렬4 : "+ndata2.sort(function(a,b){return b-a})+"<p/>");
+        document.write("수치 정렬5 : "+edata.sort()+"<p/>");//toLowerCase()소문자로 변환
+        document.write("수치 정렬6 : "+kdata.sort()+"<p/>");
+        
+        var kdata=['서울', '부산', '구포', '대구', '인천']; 
+        var str1=kdata.slice(0,4);
+        var str2=kdata.slice(2,-1);
+        var str3=kdata.slice(-4,-2);
+        document.write("부분 배열1 : " + str1 + "<p/>");
+        document.write("부분 배열2 : " + str2 + "<p/>");
+        document.write("부분 배열3 : " + str3 + "<p/>");
+
+        var kdata=['서울', '부산', '구포', '대구', '대전']; 
+        var str1=kdata.splice(1, 2);   
+        document.write("삭제 데이터 : " + str1 + "<br>");
+        document.write("남은 배열 : " + kdata + "<p/>"); //서울 대구 대전
+        var str2=kdata.splice(1, 1, '강릉', '세종');   //대구 -> //서울 강릉 세종 대전
+        document.write("삭제 데이터 : " + str2 + "<br>");
+        document.write("남은 배열 : " + kdata + "<p/>");//서울 강릉 세종 대전
+        var str3=kdata.splice(2, Number.MAX_VALUE);    
+        document.write("삭제 데이터 : " + str3 + "<br>");//세종 대전
+        document.write("남은 배열 : " + kdata + "<p/>");
+
+    </script>
+</body>
+</html>

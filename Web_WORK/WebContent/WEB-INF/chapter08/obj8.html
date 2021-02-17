@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="d1"></p>
+	<p id="d2"></p>
+	<p id="d3"></p>
+	<p id="d4"></p>
+	<p id="d5"></p>
+	<p id="d6"></p>
+	<p id="d7"></p>
+	<p id="d8"></p>
+	
+	<script>
+	//기본 생성자
+	document.getElementById("d1").innerHTML=new Date();
+	//1970.01.01 이후의 밀리초 계산
+	document.getElementById("d2").innerHTML=new Date(1491803527400);
+	//문자열 날짜
+	document.getElementById("d3").innerHTML=new Date("November 24, 2021 06:18:07");
+	//날짜 지정
+	document.getElementById("d4").innerHTML=new Date(2021, 01, 20, 15,07,20);
+	
+	 var today=new Date();
+     document.getElementById("d5").innerHTML=today.getFullYear() + "년";  
+     document.getElementById("d6").innerHTML=today.getMonth()+1 + "월 " + today.getDate() + "일";  
+     document.getElementById("d7").innerHTML=today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";  
+     document.getElementById("d8").innerHTML="1970년 1월 1일 이후 현재까지 몇 초가 지났나요? " + today.getTime() + "ms가 지났습니다."; 
+
+	</script>
+</body>
+</html>

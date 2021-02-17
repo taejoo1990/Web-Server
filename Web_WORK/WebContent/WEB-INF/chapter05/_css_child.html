@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Child Selector</title>
+<style>
+
+body>div>h3 {color:red;}
+body>p{color:green; background-color: yellow;}
+body>h3>tel>home{color:blue; background-color: purple;}/*이런방식을 주로사용 안전성*/
+h3 office{color:green;}
+
+</style>
+</head>
+<body>
+	<div>
+		<h3>Child Selector_1</h3>
+	</div>
+		<p>자식 선택자</p>
+		<h3>
+			<sno>12345</sno><br />
+			<std>정현우</std><br />
+			<tel>
+				<office>02-1234-5678</office><br />
+				<home>010-9141-1397</home>
+			</tel>
+		</h3>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var solution=10;
+
+var input=prompt('수를 맞춰주세요');
+
+console.log(input);
+
+if(input>solution){
+	alert('해답이 당신이 입력한 값보다 작습니다.')
+}else if(input<solution){
+	alert('해답이 당신이 입력한 값보다 더 큽니다.')
+}else{	
+	if(input==solution){
+		alert('정답입니다.')
+	}else{
+		alert('정답과 가깝습니다.')		
+	}
+}
+
+var gender=prompt('성별을 입력하세요')
+switch (gender) {
+case "남자":
+	alert('male')
+	break;
+case "여자":
+	alert('female')
+	break;
+case "기타":
+	alert('other')
+	break;
+default:
+	alert('정해진 성별을 입력하세요')
+	break;
+};
+	
+</script>
+</body>
+</html>

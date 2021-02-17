@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Select group</title>
+</head>
+<body>
+	<h3>그룹별 선택 항목을 제공합니다</h3>
+	<form>
+		<label>전공 분야를 선택하세요 
+		<select name="major">
+				<optgroup label="comuter"> <!-- 그룹의 이름(선택불가) -->
+					<option value="Software">Software</option>
+					<option value="Robot">Robot</option>
+					<option value="System">System</option>
+				</optgroup>
+
+				<optgroup label="language"> <!-- 그룹의 이름(선택불가) -->
+					<option value="Korea">Korea</option>
+					<option value="English">English</option>
+					<option value="China">China</option>
+					<option value="Germany">Germany</option>
+				</optgroup>
+
+				<optgroup label="business"> <!-- 그룹의 이름(선택불가) -->
+					<option value="Service">Service</option>
+					<option value="Education">Education</option>
+					<option value="Communication">Communication</option>
+					<option value="Marketing">Marketing</option>
+				</optgroup>
+
+		</select>
+			<p></p>
+			<input type="submit" value="전송" />
+			<input type="reset" value="다시 작성" />
+		</label>
+	</form>
+</body>
+</html>
+
+<!--  <optgroup> 태그는 옵션 메뉴를 제공하는 드롭다운 리스트(drop-down list)에서 사용되는 옵션들의 그룹을 정의할 때 사용 -->

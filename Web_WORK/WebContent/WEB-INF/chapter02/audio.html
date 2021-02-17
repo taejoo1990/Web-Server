@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audio 태그</title>
+</head>
+<body>
+	<h3>오디오 자동 재생</h3>
+	<audio src="eagle.mp3" controls loop autoplay></audio>
+	<h3>오디오 수동 재생</h3>
+	<audio src="bear.mp3" controls></audio>
+	<h3>오디오 다중 재생</h3>
+	<audio controls>
+		<source src="chicken.mp3" type="audio/mpeg"><!-- 익스플로워,크롬,파이어폭스 사파리 모두 가능 -->
+		<source src="chicken.mp3" type="audio/ogg"><!-- 익스플로워,크롬,파이어폭스 사파리 모두 가능 -->
+		<source src="chicken.mp3" type="audio/wav"><!-- 익스플로워,크롬,파이어폭스 사파리 모두 가능 -->
+		오디오 파일을 재생할 수 없습니다<!-- 재생될 코덱기가 없다면 출력되는 메세지 -->
+	</audio>
+</body>
+</html>

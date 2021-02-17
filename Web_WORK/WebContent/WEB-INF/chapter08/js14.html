@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+/* var text1="함수 선언 전 호출";
+var text2="함수 선언 후 호출";
+//printMsg(text1); 걸려서 출력안됨
+
+var printMsg=function(msg){
+	document.write("함수 메세지 출력: "+msg+"<p/>");
+}
+
+printMsg(text2); 
+
+var  printMsg=function(msg){
+	document.write("무명 함수: "+msg+"<br/>");
+}
+
+function printMsg(msg){
+	document.write("기본 함수: "+msg+"<br/>");
+}
+printMsg("호출되었습니다");
+
+function printMsg(name, age){
+	document.write("학생 이름: "+name+"<br/>");
+	document.write("학생 나이: "+age+"<br/>");
+}*/
+
+var result;
+function add(name, n){
+	document.write(name+"학생이 1부터 : "+n+"까지 덧셈 수행 <br>");
+	var sum=0;//지역변수
+	for (var i=1;i<=n;i++){
+		sum+=i;
+	}
+	return sum;
+}
+result=add('홍길동',10);
+document.write("결과 : "+result+"<p/>");
+result=add('이영희',100);
+document.write("결과 : "+result+"<p/>");
+</script>
+<!-- <button type="button" onclick="printMsg('홍길동', 21)">학생정보</button> -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인접 선택자(+)</title>
+<style>
+h1+h2+ul{color: blue;}/*근접한것만 색상변환*/
+div+h3{color: red;}
+h3+p{color: purple; background-color: yellow;}
+</style>
+
+</head>
+<body>
+	<div>
+		<h1>인접 형제 선택자1</h1>
+		<h2>인접 형제 선택자2</h2>
+		<ul>목록
+			<li>주제1</li>
+			<li>주제2</li>
+		</ul>
+	</div>
+	<h3>인접 형제 선택자3</h3>
+	<p>아무거나</p>
+</body>
+</html>

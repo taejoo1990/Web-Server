@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>지역/전역 변수</title>
+</head>
+<body>
+    <script>
+    
+        function getGrade() {    // 함수 정의
+        	 var kor=95; //지역변수(전역)
+        	 //kor=95; //자동 전역변수
+        	 return kor;
+        }
+        
+	    //var kor=100;(안에있는95는 무시 밖에있는게 힘이쌤)    // 전역 변수
+	    getkor=getGrade();             // 함수 호출
+	    document.write("국어 점수 : " + getkor + "<br>");
+   </script>
+</body>
+</html>

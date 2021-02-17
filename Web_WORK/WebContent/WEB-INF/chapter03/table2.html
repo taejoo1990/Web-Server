@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Table</title>
+</head>
+<body>
+	<section>
+		<article>
+			<table border="1" style="width: 50%">
+				<caption>행 통합 테이블</caption>
+				<tr>
+					<th>성명</th><!-- 헤드부분은 빼기에 2열이라 안하고 1열이라 한다. -->
+					<td>홍길동</td>
+				</tr>
+
+				<tr>
+					<th rowspan="2">취미</th><!-- rowspan으로 2개의 행통합 -->
+					<td>여행</td>
+				</tr>
+
+				<tr>
+					<td>영화</td>
+				</tr>
+
+			</table>
+		</article>
+	</section>
+
+	<p>
+		<section>
+			<article>
+				<table border="1" style="width: 50%">
+					<caption>열 통합 테이블</caption>
+					<tr>
+						<th>학번</th>
+						<th colspan="2">점수</th><!-- colspan으로 2개의 열통합 -->
+					</tr>
+
+					<tr>
+						<td>1004</td>
+						<td>총점</td>
+						<td>평균</td>
+					</tr>
+
+				</table>
+			</article>
+		</section>
+</body>
+</html>

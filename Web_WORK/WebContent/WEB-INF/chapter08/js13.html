@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For!</title>
+</head>
+<body>
+<!-- 
+var x,y;
+for(x=2;x<=5;x++){
+	document.write('<b>--['+x+']단--</b>'+"<br/>");
+	for(y=1;y<=9;y++){
+		document.write(x+"*"+y+"="+(x*y)+"<br>");
+	}
+}
+var x=0;
+var sum=0;
+while(1){
+	x+=3;
+	if(x>100)
+		break;
+	sum+=x;
+	document.write(x+" ");
+}
+document.write("<p/>");
+document.write("1~100까지의 수 중에서 3의 배수의 합 : "+sum);
+-->
+<script>
+<!-- for/if/continue;-->
+var sum = 0;
+for(var i = 0; i < 100; i++) {
+   if(i % 3 != 0) {
+      continue;
+   }
+   sum += i;
+}
+document.write("1~100까지의 수 중 3의 배수의 합 : " + sum);
+</script>
+</body>
+</html>

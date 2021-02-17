@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Time Input</title>
+</head>
+<body>
+	<form>
+		<h3>현재 시간 입력</h3>
+		Time : <input type="time" name="Now"/>
+		<h3>생일(년/월/일 시간) 입력</h3>
+		BirthDay : <input type="datetime-local" name="bdaytime"/>
+		
+		<h3>원하는 색상을 선택하세요</h3>
+		<input type="color" name="color_value" value="#0000ff"/>
+		<p></p>
+
+		<h3>나이를 입력하세요</h3>
+		<input type="number" name="count" min="1" max="130"/>
+		<p></p>
+
+		<h3>나이를 입력하세요</h3>
+		<input type="range" name="count" min="1" max="130"/>
+		<p></p>
+
+		<h3>이메일을 정확하게 입력하세요</h3>
+		이메일 : <input type="email" name="myemail"/>
+		<p></p>
+
+		<h3>홈페이지 주소를 입력하세요</h3>
+		홈페이지 : <input type="url" name="myhome"/>
+		<p></p>
+		
+		<h3>검색어를 입력하세요</h3>
+		구글검색 : <input type="search" name="googlesearh"/>
+		<!-- datelist랑 성능이 비슷 -->
+		<input type="submit" value="제출" />
+		<input type="reset" value="다시 작성" />
+	</form>
+</body>
+</html>
